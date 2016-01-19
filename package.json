@@ -1,0 +1,30 @@
+{
+  "name": "trapper-keeper",
+  "version": "1.0.0",
+  "description": "A simple config manager for Node",
+  "main": "./lib/trapper_keeper.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jspies/trapper-keeper.git"
+  },
+  "keywords": [
+    "configuration",
+    "environment"
+  ],
+  "dependencies": {
+
+  },
+  "author": "Jonathan Spies <jonathan.spies@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jspies/trapper-keeper/issues"
+  },
+  "homepage": "https://github.com/jspies/trapper-keeper#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "mockery": "^1.4.0"
+  }
+}

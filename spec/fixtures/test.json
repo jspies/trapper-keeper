@@ -1,0 +1,11 @@
+{
+  "db_connection_string": "mysql",
+  "aws": {
+    "key": "SHHHHHH"
+  },
+  "bang": {
+    "bang": {
+      "bang": "dead"
+    }
+  }
+}
