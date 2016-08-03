@@ -11,7 +11,7 @@ describe('TrapperKeeper', function() {
       expect(tk.CONFIG_DIR).toEqual(process.cwd() + "/config");
     });
 
-    describe("with env variables", function() {
+    describe("with a config", function() {
       process.env.NODE_CONFIG_DIR = path.resolve(__dirname) + "/fixtures";
 
       var tk = new TrapperKeeper();
@@ -35,6 +35,14 @@ describe('TrapperKeeper', function() {
       it("returns null if the sub key doesn't exist", function() {
         expect(tk.get("nowhereman.there")).toEqual(null);
       });
+
+      describe("with an ENV variable override", function() {
+        it("returns the ENV variable value first", function() {
+          process.env.db_connection_string = "overridden";
+          expect(tk.get('db_connection_string')).toEqual('overridden');
+          process.env.db_connection_string = null;
+        });
+      })
     });
   });
 });
