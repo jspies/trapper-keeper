@@ -4,10 +4,8 @@ An incredibly simple configuration lib for Node.js. I was dissatisified with the
 
 ### Install
 
-npm install trapper-keeper --save
-
 ```
-"trapper-keeper": "https://github.com/jspies/trapper-keeper.git"
+npm install trapper-keeper --save
 ```
 
 ### Setup
